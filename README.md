@@ -49,10 +49,13 @@ python train_model.py
 
 This will:
 1. Download base MarianMT models from Hugging Face
-2. Fine-tune them on our custom dataset (100 pairs each)
-3. Save trained models to `./models/` directory
+2. Load 5000 training pairs from OPUS-100 dataset
+3. Fine-tune models for 10 epochs (high accuracy training)
+4. Save trained models to `./models/` directory
 
-⏱️ Training takes approximately **10-20 minutes** on CPU.
+⏱️ Training takes approximately **30-60 minutes** on CPU (faster with GPU).
+
+> **For Internship Reviewers:** The models folder is not included because trained model files are ~300MB each (exceeds GitHub's 100MB limit). Simply run `python train_model.py` once - the script handles everything automatically!
 
 ---
 
